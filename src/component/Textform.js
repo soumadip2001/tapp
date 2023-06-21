@@ -36,7 +36,7 @@ function Textform(props) {
             <div className="container" style={{ color: props.mode === "light" ? "black" : "white" }}>
                 <h1>{props.heading}</h1>
                 <div className="mb-3">
-                    <textarea className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === "light" ? "white" : "grey", color: props.mode === "light" ? "black" : "white" }} id="exampleFormControlTextarea1" rows="7"></textarea> {/*without onchange function we cannot type within the textarea or input */}
+                    <textarea className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === "light" ? "white" : "grey", color: props.mode === "light" ? "black" : "white" }} id="exampleFormControlTextarea1" rows="7"></textarea> {/*without onchange function we cannot type within the textarea or input and text within value is useState*/}
                 </div>
                 <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
                 <button className="btn btn-primary mx-2" onClick={handleLowerClick}>Convert to Lowercase</button>
